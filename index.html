@@ -49,7 +49,7 @@
   
   .container {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 0 20px;
   }
   .section-title {
@@ -58,6 +58,52 @@
     border-left: 5px solid #a020f0;
     padding-left: 15px;
   }
+
+  /* Welcome Note Styles */
+  .welcome-note {
+    background: linear-gradient(135deg, #111, #1a0033);
+    border: 2px solid #a020f0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(160, 32, 240, 0.2);
+  }
+  .welcome-note h2 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  .welcome-note p {
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+  }
+  .welcome-note .highlight {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  .welcome-note .disclaimer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.85em;
+    color: #999;
+    text-align: left;
+  }
+  .welcome-note .disclaimer strong {
+    color: #ffaa00;
+  }
+  .welcome-note .social-note {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+
   .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -108,7 +154,6 @@
   }
   .about-box strong { color: #a020f0; }
   
-  /* Social Buttons */
   .social-buttons {
     display: flex;
     gap: 15px;
@@ -208,6 +253,33 @@
 </nav>
 
 <div class="container" id="home">
+  
+  <!-- Welcome Note එක මෙතන තියෙන්නේ -->
+  <div class="welcome-note">
+    <h2>🎧 WELCOME TO DJ SHAN OFFICIAL 🎧</h2>
+    <p>
+      Thank you for visiting! Enjoy Nonstop Remixes with a fresh and unique flavor.<br>
+      If you love the mix, don't forget to <span class="highlight">LIKE, COMMENT & SUBSCRIBE</span> ❤️
+    </p>
+    <p>
+      🔊 For Best Quality - Use Headphones / Better Sound System 🔊<br>
+      <strong>ReMix By :- Dj Shan</strong>
+    </p>
+    
+    <div class="social-note">
+      🙏 SUPPORT ME<br>
+      Like | Comment | Share | Subscribe 🔔<br>
+      හැමෝම Subscribe කරලා ඔයාගේ ලස්සන Comment එකක් දාගෙන යන්න 🤍🥺<br>
+      WhatsApp Status එකක් දාලා Support එකක් දෙන්න ❤️👍
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ DISCLAIMER / COPYRIGHT NOTICE:</strong><br>
+      All credits go to the original artists, composers & labels. This remix/mashup is created purely for entertainment purposes. No commercial use. No copyright infringement intended. If any artist/label has an issue, please contact us via Email and we will remove it immediately.<br><br>
+      ⭕ මෙම සියලු ගීතවල මුල් අයිතිය මුල් කලාකරුවන් සතුවේ. මෙය විනෝදය සඳහා පමණක් කරන ලද Remix / Mashup එකකි.
+    </div>
+  </div>
+
   <h2 class="section-title">🎵 Songs</h2>
   <div class="video-grid">
     
@@ -251,7 +323,7 @@
       </button>
     </div>
 
-    <!-- Song 5 (අලුත් සින්දුව) -->
+    <!-- Song 5 -->
     <div class="video-card">
       <iframe src="https://www.youtube.com/embed/R6hJ1oTapZ8" allowfullscreen></iframe>
       <p>Api Aye HamuNovena</p>
@@ -275,25 +347,10 @@
     </p>
     
     <div class="social-buttons">
-      <!-- YouTube Button -->
-      <a href="https://youtube.com/@djshan12?sub_confirmation=1" target="_blank" class="yt-btn">
-        ▶ YouTube
-      </a>
-      
-      <!-- Facebook Button -->
-      <a href="https://www.facebook.com/profile.php?id=61595352413917" target="_blank" class="fb-btn">
-        📘 Facebook
-      </a>
-      
-      <!-- WhatsApp Channel Button -->
-      <a href="https://whatsapp.com/channel/0029VbDGkuHF1YlM0HWkjO0o" target="_blank" class="wa-channel-btn">
-        📢 WhatsApp Channel
-      </a>
-
-      <!-- WhatsApp Chat Button -->
-      <a href="https://wa.me/94787763076" target="_blank" class="wa-btn">
-        💬 Chat with Me
-      </a>
+      <a href="https://youtube.com/@djshan12?sub_confirmation=1" target="_blank" class="yt-btn">▶ YouTube</a>
+      <a href="https://www.facebook.com/profile.php?id=61595352413917" target="_blank" class="fb-btn">📘 Facebook</a>
+      <a href="https://whatsapp.com/channel/0029VbDGkuHF1YlM0HWkjO0o" target="_blank" class="wa-channel-btn">📢 WhatsApp Channel</a>
+      <a href="https://wa.me/94787763076" target="_blank" class="wa-btn">💬 Chat with Me</a>
     </div>
   </div>
 </div>
