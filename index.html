@@ -7,7 +7,6 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   
-  /* Background Image */
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://raw.githubusercontent.com/heshannethsara123-creator/DJ-SHAN-WEBSITE/main/file_00000000ce1081f5817261929752e8d5.png');
@@ -18,13 +17,34 @@
     overflow-x: hidden;
   }
 
+  /* Top Auth Bar */
+  .auth-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.5);
+    gap: 10px;
+    align-items: center;
+  }
+  .auth-bar button {
+    background: #00d4ff;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .auth-bar button:hover { background: #fff; }
+  #userInfo { font-size: 0.9em; color: #ccc; font-weight: bold; }
+
   header {
-    padding: 40px 20px 30px;
+    padding: 20px 20px 30px;
     text-align: center;
     background: transparent;
   }
   
-  /* Logo Image */
   header img {
     max-width: 260px;
     width: 100%;
@@ -39,7 +59,6 @@
     100% { transform: scale(1.02); box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); }
   }
 
-  /* Title */
   header h1 {
     font-size: 2.5em;
     background: linear-gradient(90deg, #a020f0, #00d4ff, #a020f0);
@@ -93,37 +112,17 @@
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   }
-  .welcome-note h2 {
-    color: #00d4ff;
-    margin-bottom: 15px;
-    font-size: 1.8em;
-  }
-  .welcome-note p {
-    color: #ddd;
-    line-height: 1.8;
-    font-size: 1.05em;
-    margin-bottom: 15px;
-  }
-  .welcome-note .highlight {
-    color: #ff0000;
-    font-weight: bold;
-  }
+  .welcome-note h2 { color: #00d4ff; margin-bottom: 15px; font-size: 1.8em; }
+  .welcome-note p { color: #ddd; line-height: 1.8; font-size: 1.05em; margin-bottom: 15px; }
+  .welcome-note .highlight { color: #ff0000; font-weight: bold; }
   .welcome-note .disclaimer {
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-    font-size: 0.85em;
-    color: #aaa;
-    text-align: left;
+    margin-top: 25px; padding-top: 20px; border-top: 1px solid #444;
+    font-size: 0.85em; color: #aaa; text-align: left;
   }
   .welcome-note .disclaimer strong { color: #ffaa00; }
   .welcome-note .social-note {
-    margin-top: 25px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #fff;
+    margin-top: 25px; background: rgba(255, 255, 255, 0.1);
+    padding: 15px; border-radius: 10px; font-weight: bold; color: #fff;
   }
 
   .video-grid {
@@ -144,56 +143,29 @@
     box-shadow: 0 15px 40px rgba(160, 32, 240, 0.5);
     border-color: #a020f0;
   }
-  .video-card iframe {
-    width: 100%;
-    height: 200px;
-    border: none;
-    display: block;
-  }
+  .video-card iframe { width: 100%; height: 200px; border: none; display: block; }
   .video-card p { padding: 15px; font-weight: 600; color: #eee; }
   
   .download-btn {
-    width: 100%;
-    padding: 14px;
+    width: 100%; padding: 14px;
     background: linear-gradient(90deg, #a020f0, #00d4ff);
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1em;
-    transition: 0.3s;
+    border: none; color: #fff; font-weight: bold; cursor: pointer;
+    font-size: 1em; transition: 0.3s;
   }
-  .download-btn:hover {
-    background: linear-gradient(90deg, #00d4ff, #a020f0);
-  }
+  .download-btn:hover { background: linear-gradient(90deg, #00d4ff, #a020f0); }
   
   .about-box {
     background: rgba(21, 21, 21, 0.95);
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #a020f0;
-    line-height: 1.8;
-    color: #ccc;
+    padding: 30px; border-radius: 12px;
+    border: 1px solid #a020f0; line-height: 1.8; color: #ccc;
   }
   .about-box strong { color: #a020f0; }
   
-  .social-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
+  .social-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
   .social-buttons a {
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    transition: 0.3s;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    padding: 12px 25px; border-radius: 30px; text-decoration: none;
+    font-weight: bold; color: #fff; transition: 0.3s;
+    display: inline-flex; align-items: center; gap: 8px;
   }
   .social-buttons a:hover { transform: scale(1.05); }
   
@@ -202,59 +174,48 @@
   .wa-channel-btn { background: #128C7E; }
 
   footer {
-    background: rgba(17, 17, 17, 0.95);
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    color: #888;
+    background: rgba(17, 17, 17, 0.95); text-align: center;
+    padding: 40px 20px; margin-top: 60px; color: #888;
     border-top: 1px solid #222;
   }
   
+  /* Modals */
   .modal {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.85);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    display: none; position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%; background: rgba(0,0,0,0.85);
+    z-index: 999; justify-content: center; align-items: center; padding: 20px;
   }
   .modal.active { display: flex; }
   .modal-content {
-    background: #1a1a1a;
-    padding: 35px 25px;
-    border-radius: 15px;
-    max-width: 420px;
-    width: 100%;
-    text-align: center;
-    border: 2px solid #a020f0;
+    background: #1a1a1a; padding: 35px 25px; border-radius: 15px;
+    max-width: 420px; width: 100%; text-align: center; border: 2px solid #a020f0;
   }
   .modal-content h2 { margin-bottom: 15px; color: #a020f0; font-size: 1.4em; }
   .modal-content p { margin-bottom: 20px; color: #ccc; }
-  .subscribe-btn, .download-final {
-    display: block;
-    padding: 14px;
-    margin: 12px 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
+  
+  .modal-content input {
+    width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px;
+    border: 1px solid #444; background: #222; color: #fff; font-size: 1em;
+  }
+  .modal-content input:focus { outline: none; border-color: #a020f0; }
+  
+  .subscribe-btn, .download-final, .auth-submit-btn {
+    display: block; padding: 14px; margin: 12px 0;
+    border-radius: 8px; text-decoration: none; font-weight: bold;
+    color: #fff; cursor: pointer; border: none; width: 100%; font-size: 1em;
   }
   .subscribe-btn { background: #ff0000; }
   .download-final { background: #00c853; }
   .download-final.disabled { background: #444; pointer-events: none; }
+  .auth-submit-btn { background: #00d4ff; color: #000; }
+  
   .close-btn {
-    background: transparent;
-    border: 1px solid #555;
-    color: #aaa;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
+    background: transparent; border: 1px solid #555; color: #aaa;
+    padding: 10px 25px; border-radius: 5px; cursor: pointer; margin-top: 15px;
   }
   .close-btn:hover { border-color: #a020f0; color: #a020f0; }
+  
+  .toggle-auth { color: #00d4ff; cursor: pointer; font-size: 0.9em; margin-top: 15px; display: block; }
   
   @media (max-width: 600px) {
     header img { max-width: 220px; }
@@ -265,11 +226,15 @@
 </head>
 <body>
 
+<!-- Top Auth Bar -->
+<div class="auth-bar">
+  <span id="userInfo">Not Logged In</span>
+  <button id="authBtn" onclick="openAuthModal()">Login / Signup</button>
+  <button id="logoutBtn" onclick="logout()" style="display:none; background:#ff4444; color:#fff;">Logout</button>
+</div>
+
 <header>
-  <!-- Logo Image -->
   <img src="https://raw.githubusercontent.com/heshannethsara123-creator/DJ-SHAN-WEBSITE/main/34632.jpg" alt="Dj Shan Entertainment Logo">
-  
-  <!-- Title -->
   <h1>🎧 DJ SHAN ENTERTAINMENT</h1>
   <p>Your Music • Your Vibes • Your DJ</p>
 </header>
@@ -314,7 +279,7 @@
       <iframe src="https://www.youtube.com/embed/p2UZwNY0go8" allowfullscreen></iframe>
       <p>Yalla (යල්ල)</p>
       <button class="download-btn" 
-        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1PNuUzUp1RAd33pxmkptT-FJBzfylTk8s')">
+        onclick="checkLoginThenSubscribe('https://drive.google.com/uc?export=download&id=1PNuUzUp1RAd33pxmkptT-FJBzfylTk8s')">
         ⬇ Download Song
       </button>
     </div>
@@ -324,7 +289,7 @@
       <iframe src="https://www.youtube.com/embed/YgyK7pXF-TU" allowfullscreen></iframe>
       <p>Vahee (වාහේ)</p>
       <button class="download-btn" 
-        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1dZ3ruKd6qnF5sgK-rCcL4JlVpbC4Vox7')">
+        onclick="checkLoginThenSubscribe('https://drive.google.com/uc?export=download&id=1dZ3ruKd6qnF5sgK-rCcL4JlVpbC4Vox7')">
         ⬇ Download Song
       </button>
     </div>
@@ -334,7 +299,7 @@
       <iframe src="https://www.youtube.com/embed/5rbtV1H45e8" allowfullscreen></iframe>
       <p>Mata lassana Iskole areddi (මට ලස්සන ඉස්කෝලෙ ඇරෙද්දි)</p>
       <button class="download-btn" 
-        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1vlevFBe45ne7L6dT74AlAd3K2aVkGecG')">
+        onclick="checkLoginThenSubscribe('https://drive.google.com/uc?export=download&id=1vlevFBe45ne7L6dT74AlAd3K2aVkGecG')">
         ⬇ Download Song
       </button>
     </div>
@@ -344,7 +309,7 @@
       <iframe src="https://www.youtube.com/embed/HYJCIXgy6c8" allowfullscreen></iframe>
       <p>HaHa Hadai (හ හ හැඩයි පායා)</p>
       <button class="download-btn" 
-        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1NMYtVJP-Q1-SXOALpMDqgoQfFU2qC2zZ')">
+        onclick="checkLoginThenSubscribe('https://drive.google.com/uc?export=download&id=1NMYtVJP-Q1-SXOALpMDqgoQfFU2qC2zZ')">
         ⬇ Download Song
       </button>
     </div>
@@ -354,7 +319,7 @@
       <iframe src="https://www.youtube.com/embed/R6hJ1oTapZ8" allowfullscreen></iframe>
       <p>Api Aye HamuNovena</p>
       <button class="download-btn" 
-        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1kEDHWHaIQ1Zmf7_tHTKWU3DCnYbc60og')">
+        onclick="checkLoginThenSubscribe('https://drive.google.com/uc?export=download&id=1kEDHWHaIQ1Zmf7_tHTKWU3DCnYbc60og')">
         ⬇ Download Song
       </button>
     </div>
@@ -384,6 +349,20 @@
   <p>© 2026 Dj Shan Entertainment. All rights reserved.</p>
 </footer>
 
+<!-- Auth Modal (Login/Signup) -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <h2 id="authTitle">Login</h2>
+    <p id="authMessage" style="font-size: 0.9em; color: #ffaa00;"></p>
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="password" id="password" placeholder="Password">
+    <button class="auth-submit-btn" id="authSubmit" onclick="handleAuth()">Login</button>
+    <span class="toggle-auth" id="toggleText" onclick="toggleAuthMode()">Don't have an account? Sign Up</span>
+    <button class="close-btn" onclick="closeAuthModal()">✖ Close</button>
+  </div>
+</div>
+
+<!-- Download Modal (Subscribe) -->
 <div id="subscribeModal" class="modal">
   <div class="modal-content">
     <h2>🎧 Subscribe කරලා Download කරන්න!</h2>
@@ -401,39 +380,138 @@
   </div>
 </div>
 
-<script>
-let currentDownloadLink = '';
+<!-- Firebase Script -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
-function showSubscribePopup(link) {
-  currentDownloadLink = link;
-  const modal = document.getElementById('subscribeModal');
-  const btn = document.getElementById('finalDownloadBtn');
-  modal.classList.add('active');
-  btn.classList.add('disabled');
-  btn.textContent = '⬇ Download (Subscribe First)';
-  btn.href = '#';
-}
+  const firebaseConfig = {
+    apiKey: "AIzaSyCZ2xbKX0OuHP4FHg34txmVl6f4IHXDX2U",
+    authDomain: "dj-shan-web-site.firebaseapp.com",
+    projectId: "dj-shan-web-site",
+    storageBucket: "dj-shan-web-site.firebasestorage.app",
+    messagingSenderId: "137792453485",
+    appId: "1:137792453485:web:e509e25d3293e439b8f864"
+  };
 
-function startDownloadTimer() {
-  let seconds = 5;
-  const btn = document.getElementById('finalDownloadBtn');
-  btn.href = currentDownloadLink;
-  btn.textContent = `⬇ Download (${seconds}s)`;
-  const timer = setInterval(() => {
-    seconds--;
-    if (seconds > 0) {
-      btn.textContent = `⬇ Download (${seconds}s)`;
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  let isLoginMode = true;
+  let isUserLoggedIn = false;
+
+  // Auth State Listener
+  onAuthStateChanged(auth, (user) => {
+    const userInfo = document.getElementById('userInfo');
+    const authBtn = document.getElementById('authBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
+
+    if (user) {
+      isUserLoggedIn = true;
+      userInfo.textContent = "👤 " + user.email;
+      authBtn.style.display = 'none';
+      logoutBtn.style.display = 'block';
     } else {
-      clearInterval(timer);
-      btn.classList.remove('disabled');
-      btn.textContent = '⬇ Download Now';
+      isUserLoggedIn = false;
+      userInfo.textContent = "Not Logged In";
+      authBtn.style.display = 'block';
+      logoutBtn.style.display = 'none';
     }
-  }, 1000);
-}
+  });
 
-function closePopup() {
-  document.getElementById('subscribeModal').classList.remove('active');
-}
+  // Toggle Login/Signup
+  window.toggleAuthMode = function() {
+    isLoginMode = !isLoginMode;
+    document.getElementById('authTitle').textContent = isLoginMode ? "Login" : "Sign Up";
+    document.getElementById('authSubmit').textContent = isLoginMode ? "Login" : "Sign Up";
+    document.getElementById('toggleText').textContent = isLoginMode ? "Don't have an account? Sign Up" : "Already have an account? Login";
+    document.getElementById('authMessage').textContent = "";
+  }
+
+  // Handle Auth Form Submit
+  window.handleAuth = async function() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const msg = document.getElementById('authMessage');
+
+    if(!email || !password) {
+      msg.textContent = "Please enter email and password.";
+      return;
+    }
+
+    try {
+      if (isLoginMode) {
+        await signInWithEmailAndPassword(auth, email, password);
+        closeAuthModal();
+      } else {
+        await createUserWithEmailAndPassword(auth, email, password);
+        closeAuthModal();
+      }
+    } catch (error) {
+      msg.textContent = error.message;
+    }
+  }
+
+  // Open/Close Auth Modal
+  window.openAuthModal = function() {
+    document.getElementById('authModal').classList.add('active');
+    document.getElementById('authMessage').textContent = "";
+    document.getElementById('email').value = "";
+    document.getElementById('password').value = "";
+  }
+  window.closeAuthModal = function() {
+    document.getElementById('authModal').classList.remove('active');
+  }
+
+  // Logout
+  window.logout = function() {
+    signOut(auth).then(() => {
+      alert("Logged out successfully!");
+    });
+  }
+
+  // Check Login before showing download subscribe popup
+  window.checkLoginThenSubscribe = function(link) {
+    if (!isUserLoggedIn) {
+      openAuthModal();
+      document.getElementById('authMessage').textContent = "⚠️ You must login first to download songs!";
+    } else {
+      showSubscribePopup(link);
+    }
+  }
+
+  // Download Logic
+  let currentDownloadLink = '';
+  window.showSubscribePopup = function(link) {
+    currentDownloadLink = link;
+    const modal = document.getElementById('subscribeModal');
+    const btn = document.getElementById('finalDownloadBtn');
+    modal.classList.add('active');
+    btn.classList.add('disabled');
+    btn.textContent = '⬇ Download (Subscribe First)';
+    btn.href = '#';
+  }
+
+  window.startDownloadTimer = function() {
+    let seconds = 5;
+    const btn = document.getElementById('finalDownloadBtn');
+    btn.href = currentDownloadLink;
+    btn.textContent = `⬇ Download (${seconds}s)`;
+    const timer = setInterval(() => {
+      seconds--;
+      if (seconds > 0) {
+        btn.textContent = `⬇ Download (${seconds}s)`;
+      } else {
+        clearInterval(timer);
+        btn.classList.remove('disabled');
+        btn.textContent = '⬇ Download Now';
+      }
+    }, 1000);
+  }
+
+  window.closePopup = function() {
+    document.getElementById('subscribeModal').classList.remove('active');
+  }
 </script>
 
 </body>
