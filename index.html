@@ -6,28 +6,52 @@
 <title>Dj Shan Entertainment | Official Website</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  /* Background Image */
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0a0a0a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url('https://raw.githubusercontent.com/heshannethsara123-creator/DJ-SHAN-WEBSITE/main/25326.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     overflow-x: hidden;
   }
+
   header {
-    background: linear-gradient(135deg, #1a0033 0%, #330066 50%, #0a0a0a 100%);
-    padding: 60px 20px 40px;
+    padding: 40px 20px 30px;
     text-align: center;
-    border-bottom: 3px solid #a020f0;
+    background: transparent;
   }
+  
+  /* Logo Image */
+  header img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+    animation: pulse 3s infinite alternate;
+    margin-bottom: 20px;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
+    100% { transform: scale(1.02); box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); }
+  }
+
+  /* Title */
   header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     background: linear-gradient(90deg, #a020f0, #00d4ff, #a020f0);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s linear infinite;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
   }
   @keyframes shine { to { background-position: 200% center; } }
-  header p { color: #aaa; margin-top: 10px; font-size: 1.1em; }
+  
+  header p { color: #ddd; margin-top: 10px; font-size: 1.1em; font-weight: bold; }
   
   nav {
     background: rgba(17,17,17,0.95);
@@ -36,7 +60,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #a020f0;
   }
   nav a {
     color: #fff;
@@ -55,19 +79,20 @@
   .section-title {
     font-size: 2em;
     margin-bottom: 30px;
-    border-left: 5px solid #a020f0;
+    border-left: 5px solid #00d4ff;
     padding-left: 15px;
+    text-shadow: 2px 2px 4px #000;
   }
 
-  /* Welcome Note Styles */
   .welcome-note {
-    background: linear-gradient(135deg, #111, #1a0033);
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(5px);
     border: 2px solid #a020f0;
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 50px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(160, 32, 240, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   }
   .welcome-note h2 {
     color: #00d4ff;
@@ -87,17 +112,15 @@
   .welcome-note .disclaimer {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid #444;
     font-size: 0.85em;
-    color: #999;
+    color: #aaa;
     text-align: left;
   }
-  .welcome-note .disclaimer strong {
-    color: #ffaa00;
-  }
+  .welcome-note .disclaimer strong { color: #ffaa00; }
   .welcome-note .social-note {
     margin-top: 25px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
@@ -110,15 +133,16 @@
     gap: 25px;
   }
   .video-card {
-    background: #151515;
+    background: rgba(21, 21, 21, 0.9);
     border-radius: 12px;
     overflow: hidden;
     transition: 0.4s;
-    border: 1px solid #222;
+    border: 1px solid #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   }
   .video-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(160, 32, 240, 0.4);
+    box-shadow: 0 15px 40px rgba(160, 32, 240, 0.5);
     border-color: #a020f0;
   }
   .video-card iframe {
@@ -145,12 +169,13 @@
   }
   
   .about-box {
-    background: linear-gradient(135deg, #151515, #1a0033);
+    background: rgba(21, 21, 21, 0.9);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #a020f0;
     line-height: 1.8;
     color: #ccc;
+    backdrop-filter: blur(5px);
   }
   .about-box strong { color: #a020f0; }
   
@@ -180,7 +205,7 @@
   .wa-channel-btn { background: #128C7E; }
 
   footer {
-    background: #111;
+    background: rgba(17, 17, 17, 0.95);
     text-align: center;
     padding: 40px 20px;
     margin-top: 60px;
@@ -235,6 +260,7 @@
   .close-btn:hover { border-color: #a020f0; color: #a020f0; }
   
   @media (max-width: 600px) {
+    header img { max-width: 220px; }
     header h1 { font-size: 1.8em; }
     nav a { margin: 0 8px; font-size: 0.9em; }
   }
@@ -243,6 +269,10 @@
 <body>
 
 <header>
+  <!-- Logo Image -->
+  <img src="https://raw.githubusercontent.com/heshannethsara123-creator/DJ-SHAN-WEBSITE/main/34632.jpg" alt="Dj Shan Entertainment Logo">
+  
+  <!-- Title -->
   <h1>🎧 DJ SHAN ENTERTAINMENT</h1>
   <p>Your Music • Your Vibes • Your DJ</p>
 </header>
@@ -254,7 +284,6 @@
 
 <div class="container" id="home">
   
-  <!-- Welcome Note එක මෙතන තියෙන්නේ -->
   <div class="welcome-note">
     <h2>🎧 WELCOME TO DJ SHAN OFFICIAL 🎧</h2>
     <p>
