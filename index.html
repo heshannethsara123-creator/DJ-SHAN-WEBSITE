@@ -108,6 +108,7 @@
   }
   .about-box strong { color: #a020f0; }
   
+  /* Social Buttons */
   .social-buttons {
     display: flex;
     gap: 15px;
@@ -122,10 +123,17 @@
     font-weight: bold;
     color: #fff;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
   }
-  .yt-btn { background: #ff0000; }
-  .social-buttons a:hover { transform: scale(1.1); }
+  .social-buttons a:hover { transform: scale(1.05); }
   
+  .yt-btn { background: #ff0000; }
+  .fb-btn { background: #1877F2; }
+  .wa-btn { background: #25D366; }
+  .wa-channel-btn { background: #128C7E; }
+
   footer {
     background: #111;
     text-align: center;
@@ -243,11 +251,21 @@
       </button>
     </div>
 
+    <!-- Song 5 (අලුත් සින්දුව) -->
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/R6hJ1oTapZ8" allowfullscreen></iframe>
+      <p>Api Aye HamuNovena</p>
+      <button class="download-btn" 
+        onclick="showSubscribePopup('https://drive.google.com/uc?export=download&id=1kEDHWHaIQ1Zmf7_tHTKWU3DCnYbc60og')">
+        ⬇ Download Song
+      </button>
+    </div>
+
   </div>
 </div>
 
 <div class="container" id="about">
-  <h2 class="section-title">👤 About Me</h2>
+  <h2 class="section-title">👤 About Me & Contact</h2>
   <div class="about-box">
     <p>
       Welcome to <strong>Dj Shan Entertainment</strong>! 🎧<br><br>
@@ -255,8 +273,27 @@
       මෙතන ඔයාට අහන්න පුළුවන් best DJ mixes, songs, සහ entertainment videos.<br><br>
       👉 Subscribe කරන්න අමතක කරන්න එපා! 🔔
     </p>
+    
     <div class="social-buttons">
-      <a href="https://youtube.com/@djshan12?sub_confirmation=1" target="_blank" class="yt-btn">▶ YouTube</a>
+      <!-- YouTube Button -->
+      <a href="https://youtube.com/@djshan12?sub_confirmation=1" target="_blank" class="yt-btn">
+        ▶ YouTube
+      </a>
+      
+      <!-- Facebook Button -->
+      <a href="https://www.facebook.com/profile.php?id=61595352413917" target="_blank" class="fb-btn">
+        📘 Facebook
+      </a>
+      
+      <!-- WhatsApp Channel Button -->
+      <a href="https://whatsapp.com/channel/0029VbDGkuHF1YlM0HWkjO0o" target="_blank" class="wa-channel-btn">
+        📢 WhatsApp Channel
+      </a>
+
+      <!-- WhatsApp Chat Button -->
+      <a href="https://wa.me/94787763076" target="_blank" class="wa-btn">
+        💬 Chat with Me
+      </a>
     </div>
   </div>
 </div>
@@ -318,4 +355,4 @@ function closePopup() {
 </script>
 
 </body>
-  </html>
+ </html>
